@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head tag for the head of the page-->
+<head>
+    <!--style tag for customizing the page in different ways-->
+    <style>
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        a {
+            color: #ffcb1d;
+            /*text-decoration: none;*/
+            font-family: "Yu Gothic";
+        }
+        body {
+            background: #e4e4e4;
+        }
+
+
+        .nav-menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-wrapper {
+            width: 100%;
+            background: #000000;
+        }
+
+        .nav-menu li {
+            display: inline;
+            list-style: none;
+        }
+
+        .sub-menu {
+            position: absolute;
+            display: none;
+            background: #434343;
+        }
+
+        .nav-menu ul li:hover > ul {
+            display: block;
+        }
+
+        .nav-menu > ul > li:after {
+            content: "\25BC";
+            font-size: .5em;
+            display: inline;
+            position: relative;
+        }
+
+        [id=movies-tv-showtimes] {
+            color: #ffcb1d;
+        }
+    </style>
+<!--title tag for the title of the app or website-->
+    <title>IMDb App</title>
+</head>
+<!--body tag for the body of the code or "meat" of the project-->
+<body>
+<!--this div tag is to group all of the navigation menu, the search bar and the home button in one group -->
+<div class="nav-wrapper">
+<!--a tag is used as a link for the home button or in this case the IMDB button-->
+    <a href="/">IMDB</a>
+    <!--input tag is used for input in the search bar-->
+    <input type="text" id="search-bar" name="search-bar" class="u-full-width"
+           placeholder="Find Movies, TV Shows, Celebrities and more...">
+    <!--the nav tag is used for the navigation menu to search through the website.
+    it helps the computer and coders see where any navigation is happening-->
+    <nav class="nav-menu">
+        <!--the ul tag is used for an unordered list to put all of the menu items in a list-->
+        <ul class="clearfix">
+            <!--li tag is used for the item in the list-->
+            <li id="movies-tv-showtimes"><a href="">Movies</a>, <a href="">TV</a> & <a href="">Showtimes</a>
+                <!--ul tag is used for the unordered list for the sub menu-->
+                <ul class="sub-menu">
+                    <!--li tag is used for the movies item in the sub menu-->
+                    <li><a href="">Movies</a></li>
+                    <!--li tag is used for the tv item in the sub menu-->
+                    <li><a href="">TV</a></li>
+                    <!--li tag is used for the showtimes item in the sub menu-->
+                    <li><a href="">Showtimes</a></li>
+                </ul>
+            </li>
+            <!--li tag is used for the item of celebs, events & photos-->
+            <li><a href="/">Celebs, Events & Photos</a>
+                <!--ul tag is used for the sub menu-->
+                <ul class="sub-menu">
+                    <!--li tag is used for the item celebs in the sub menu-->
+                    <li><a href="">Celebs</a></li>
+                    <!--li tag is used for the item events in the sub menu-->
+                    <li><a href="">Events</a></li>
+                    <!--li tag is used for the item photos in the sub menu-->
+                    <li><a href="">Photos</a></li>
+                </ul>
+            </li>
+            <li><a href="/">News & Commuinty</a>
+                <ul class="sub-menu">
+                    <li><a href="/">News</a></li>
+                    <li><a href="/">Community</a></li>
+                </ul>
+            </li>
+            <li><a href="/">Watchlist</a></li>
+        </ul>
+
+    </nav>
+</div>
+<article>
+    <section id="the-last-jedi-header">
+        <h2>Star Wars: The Last Jedi (2017)</h2>
+        <p>Star Wars: Episode VIII - The Last Jedi (original title)</p>
+        <p>PG-13 | 2h 32min | <a href="/">Action</a>, <a href="/">Adventure</a>, <a href="/">Fantasy</a> | 15 December
+            2017 (USA)</p>
+    </section>
+    <section id="the-last-jedi-summary">
+        <p>Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the
+            strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.</p>
+    </section>
+    <section id="the-last-jedi-directors">
+        <h4>Director:</h4>
+        <p><a href="/">Rian Johnson</a></p>
+    </section>
+    <section id="the-last-jedi-writers">
+        <h4>Writers:</h4>
+        <p>
+            <a href="/">Rian Johnson</a>,
+            <a href="/">George Lucas</a> (based on characters created by)
+        </p>
+    </section>
+    <section id="the-last-jedi-stars">
+        <h4>Stars:</h4>
+        <p>
+            <a href="/">Daisy Ridley</a>,
+            <a href="/">John Boyega</a>,
+            <a href="/">Mark Hamill</a> | See full cast & crew
+        </p>
+    </section>
+</article>
+
+<div id="root"></div>
+
+</body>
+</html>
